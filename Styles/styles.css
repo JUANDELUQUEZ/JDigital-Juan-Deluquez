@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box; /* Esto hace que el tamaño de las cajas sea más fácil de manejar */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Una fuente legible */
+  margin: 0; /* Quita el margen blanco feo */
+  padding: 0;
+  background-color: #f4f4f4; /* Un fondo gris claro */
+  color: #333; /* Texto oscuro */
+}
+/* Haremos que 'main' (el contenido principal) y el 'header' tengan un ancho máximo */
+header,
+main,
+footer {
+  max-width: 900px; /* Un ancho máximo de 900px */
+  margin: 20px auto; /* 20px de espacio arriba/abajo y 'auto' en los lados (lo centra) */
+  padding: 15px; /* Espacio interno */
+  background-color: #ffffff; /* Fondo blanco para las secciones */
+  border-radius: 8px; /* Bordes redondeados */
+}
