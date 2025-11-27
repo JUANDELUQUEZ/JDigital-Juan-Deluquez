@@ -1,15 +1,22 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+// Tenemos tres PF (partes funcionales) en el trabajo
+
+// PF#1 - Herramientas
+import java.sql.Connection; // Libreria para mantener la conexion con la base de datos 
+import java.sql.DriverManager; // Esta es una clase que controla los "drivers" algo que entienda el protocolo de "jdbc:mysql".
+import java.sql.SQLException; // 
 
 public class Conexion {
 
-  // Variables Secretas
+  // Variables Secretas PF#2 - Componentes 
+  /* // Cadena de conexion.
+  Esto es una URL de conexion de JDBC, que es lo que significa cada una de las partes de la cadena: 
+    
+  */
   String url = "jdbc:mysql://localhost:3306/tienda_crud";
   String usuario = "root";
   String clave = "";
 
-  public Connection conectar() {
+  public Connection conectar() { // PF#3 - Ejecutando 
     // variable vacia 
     Connection link = null;
 
