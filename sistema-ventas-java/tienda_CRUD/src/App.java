@@ -26,7 +26,7 @@ public class App { // C de Create del CRUD
 }
  */
 
-/* public class App { // R de Read del CRUD
+public class App { // R de Read del CRUD
   public static void main(String[] args) throws Exception {
     System.out.println("Hello, World!");
 
@@ -35,7 +35,7 @@ public class App { // C de Create del CRUD
     Conexion miConexion = new Conexion();
     Connection con = miConexion.conectar();
     
-    String sql = "SELECT * FROM productos";
+    String sql = "SELECT * FROM productos WHERE id_producto = 1";
 
     try {
       Statement st = con.createStatement();
@@ -57,11 +57,11 @@ public class App { // C de Create del CRUD
     }
 
   }
-} */
+}  
 
 
-public class App { // D de Delete del CRUD
+/* public class App { // D de Delete del CRUD
     public static void main(String[] args) {
       
     }
-  }
+  } */
